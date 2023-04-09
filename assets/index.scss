@@ -1,0 +1,32 @@
+@import "bootstrap/scss/bootstrap";
+@import "./custom.scss";
+@import "./blog.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0 !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+  gap: 1rem;
+
+  @media screen and (max-width: 660px) {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}
+
+.container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
